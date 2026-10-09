@@ -1,10 +1,13 @@
 /* ==UserStyle==
 @name           Roští admin — Dark (rosti.cz design, APCA)
 @namespace      rosti-dark.local
-@version        2.1.0
+@version        2.1.1
 @description    Dark mode for admin.rosti.cz + its Ace editor in the rosti.cz design system (neutral palette, rosti.cz menus/buttons/links hover states, Inter / Space Grotesk / JetBrains Mono via fonts.bunny.net, rounded UI). All text meets APCA Lc 75; input borders Lc 45.
 @author         Dan Srb
 @license        MIT
+@homepageURL    https://github.com/benabraham/rosti-dark
+@supportURL     https://github.com/benabraham/rosti-dark/issues
+@updateURL      https://raw.githubusercontent.com/benabraham/rosti-dark/main/dist/rosti-dark.user.css
 @preprocessor   default
 ==/UserStyle== */
 

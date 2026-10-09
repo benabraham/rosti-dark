@@ -23,6 +23,9 @@ const CHROMATIC_BY_NAME = Object.fromEntries([...fs.readFileSync(PATHS.palette, 
   .matchAll(/'(#[0-9a-f]{6})', \/\/ ([a-z]+-\d+)/g)].map(([, hex, name]) => [name, hex]))
 const files = [PATHS.mainCss, PATHS.styleCss]
 const VERSION = require('../package.json').version
+// Stylus checks @updateURL for a newer @version; bump package.json version on every release
+const REPO_URL = 'https://github.com/benabraham/rosti-dark'
+const RAW_URL = 'https://raw.githubusercontent.com/benabraham/rosti-dark/main'
 
 const ACE_DIR = PATHS.aceCssDir
 const ACE_VERSION = require('ace-builds/package.json').version
@@ -38,6 +41,9 @@ const header = `/* ==UserStyle==
 @description    Dark mode for admin.rosti.cz + its Ace editor in the rosti.cz design system (neutral palette, rosti.cz menus/buttons/links hover states, Inter / Space Grotesk / JetBrains Mono via fonts.bunny.net, rounded UI). All text meets APCA Lc ${TARGET.text}; input borders Lc ${TARGET.control}.
 @author         Dan Srb
 @license        MIT
+@homepageURL    ${REPO_URL}
+@supportURL     ${REPO_URL}/issues
+@updateURL      ${RAW_URL}/dist/rosti-dark.user.css
 @preprocessor   default
 ==/UserStyle== */`
 

@@ -13,10 +13,10 @@ Two builds of the same theme are in [`dist/`](dist):
 ### As a userstyle (Stylus)
 
 1. Install [Stylus](https://add0n.com/stylus.html) for Firefox or Chrome.
-2. Open the raw [`dist/rosti-dark.user.css`](dist/rosti-dark.user.css) file — Stylus offers to install it.
+2. **[Install rosti-dark](https://raw.githubusercontent.com/benabraham/rosti-dark/main/dist/rosti-dark.user.css)**. Stylus opens an install page for it.
 3. Visit admin.rosti.cz. Toggle the style from the Stylus toolbar menu.
 
-Installing from the raw GitHub URL lets Stylus check for updates.
+Stylus checks that URL for new versions and updates the style automatically.
 
 ### On the site itself (`prefers-color-scheme`)
 

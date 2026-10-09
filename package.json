@@ -1,10 +1,12 @@
 {
   "name": "rosti-dark",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "private": true,
   "description": "APCA-checked dark mode for admin.rosti.cz in the rosti.cz design system — as a Stylus userstyle and as a drop-in prefers-color-scheme stylesheet",
   "author": "Dan Srb",
   "license": "MIT",
+  "repository": "github:benabraham/rosti-dark",
+  "homepage": "https://github.com/benabraham/rosti-dark#readme",
   "type": "module",
   "engines": {
     "node": ">=22"

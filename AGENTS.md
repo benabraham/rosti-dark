@@ -91,7 +91,7 @@ Edit the design layer in `scripts/build.mjs`: tokens in `:root` (`--rd-*`), comp
 Add its selector to the Space Grotesk list in the design layer ("Space Grotesk on everything that reads as a heading"). Controls inside heading areas are reset to Inter right after; keep that reset in sync.
 
 ### Bump the version
-`package.json` `version` is written into the UserCSS `@version`; Stylus uses it for updates. Bump it for every user-visible change.
+`package.json` `version` is written into the UserCSS `@version`. Installed copies poll `@updateURL` (the raw `dist/rosti-dark.user.css` on `main`) and update only when `@version` increases. Bump it for every change to `dist/`, or users won't receive it.
 
 ## Pitfalls already hit
 
