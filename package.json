@@ -1,0 +1,27 @@
+{
+  "name": "rosti-dark",
+  "version": "2.1.0",
+  "private": true,
+  "description": "APCA-checked dark mode for admin.rosti.cz in the rosti.cz design system — as a Stylus userstyle and as a drop-in prefers-color-scheme stylesheet",
+  "author": "Dan Srb",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "sources": "node scripts/fetch-sources.mjs",
+    "palette": "node scripts/extract-palette.mjs",
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check-contrast.mjs"
+  },
+  "devDependencies": {
+    "ace-builds": "1.44.0",
+    "apca-w3": "0.1.9",
+    "culori": "^4.0.2",
+    "playwright": "^1.64.0",
+    "postcss": "^8.5.29",
+    "postcss-value-parser": "^4.2.0",
+    "svgo": "^4.1.0"
+  }
+}

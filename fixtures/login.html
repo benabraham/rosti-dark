@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    
+    
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/static/ui/gfx/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    
+    <style type="text/css">
+        body {
+            padding-top: 0px;
+            background-color: #f5f5f5;
+        }
+        .box {
+            background-color: #FFFFFF;
+            border: 1px solid #E5E5E5;
+            border-radius: 5px 5px 5px 5px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+            margin: 0 auto 20px;
+            max-width: 300px;
+            padding: 19px 29px 29px;
+        }
+    </style>
+    
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" media="all" href="/static/ui/css/main.css">
+    <link rel="stylesheet" media="all" href="/static/css/style.css">
+    
+    
+
+</head>
+<body>
+
+    <div class="login-page-wrap">
+        <div class="login-page-inner">
+
+            <div class="login-logo-wrap">
+                <a href="/"><img src="/static/ui/gfx/logo.png" alt="Roští.cz" class="login-logo"></a>
+                <p class="text-muted">Správa hostingových aplikací</p>
+            </div>
+
+            <div class="login-card">
+                
+
+                <form method="post" action="/login/" id="password-form"><input type="hidden" name="csrfmiddlewaretoken" value="fixture">
+                    
+
+
+
+
+    
+    <div class="form-group">
+        
+            
+                <label for="id_username">E-mailová adresa
+                    <sup class="req">*</sup></label>
+            
+            
+            <input type="text" name="username" autofocus autocapitalize="none" autocomplete="username" maxlength="254" class="form-control" required id="id_username">
+        
+        
+    </div>
+    
+
+    
+    <div class="form-group">
+        
+            
+                <label for="id_password">Heslo
+                    <sup class="req">*</sup></label>
+            
+            
+            <input type="password" name="password" autocomplete="current-password" class="form-control" required id="id_password">
+        
+        
+    </div>
+    
+
+
+                    
+                        <input type="hidden" name="next" value="/">
+                    
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 8px;">
+                        <a class="login-forgot" href="/password/reset/">Zapomněli jste heslo?</a>
+                        <button type="submit" class="btn btn-primary"><span class="rosti-access-icon"></span>Přihlásit se</button>
+                    </div>
+                </form>
+
+                <hr style="border: none; border-top: 1px solid #e8e8e8; margin: 24px 0;">
+
+                <div id="passkey-section" style="display: none;">
+                    <button type="button" class="btn btn-default btn-sm btn-block" id="passkey-btn">
+                        <span class="glyphicon glyphicon-lock"></span>
+                        Přihlásit se přístupovým klíčem
+                    </button>
+                    <div id="passkey-error" class="alert alert-danger" style="display:none; margin-top: 10px;"></div>
+                </div>
+
+                <div style="margin-top: 8px;">
+                    <a href="/login/magic/" class="btn btn-default btn-sm btn-block">
+                        <span class="glyphicon glyphicon-envelope"></span>
+                        Přihlásit se odkazem v e-mailu
+                    </a>
+                </div>
+            </div>
+
+            <div class="login-below-card">
+                Nemáte účet?
+                <a href="/sign-up/">Vytvořit nový účet</a>
+            </div>
+
+        </div>
+    </div>
+
+    
+
+
+    
+
+    
+    
+    
+    
+    
+
+</body>
+</html>

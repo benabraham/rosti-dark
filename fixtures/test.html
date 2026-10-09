@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Roští component test</title>
+<link rel="stylesheet" href="/static/ui/css/main.css">
+<link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+<div id="header" class="clearfix" style="padding:10px 20px">
+  <img src="/static/ui/gfx/logo.png" alt="Roští.cz">
+  <span class="notification">3</span>
+</div>
+<div class="container-fluid">
+<div class="row">
+  <div class="col-sm-3">
+    <div id="navigation">
+      <ul class="main-menu">
+        <li class="active"><a href="#"><span class="fa fa-dashboard"></span> Přehled</a></li>
+        <li><a href="#"><span class="fa fa-cubes"></span> Aplikace</a></li>
+        <li><a href="#" class="menu-subitem">Databáze</a></li>
+        <li><a href="#"><span class="fa fa-envelope"></span> E-maily</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-sm-9">
+    <div class="apps-transition-note">Aplikace se přesouvají na novou platformu. <a href="#">Více informací</a></div>
+    <div class="heading clearfix"><div class="strong">Aplikace</div><div class="button pull-right"><a class="btn btn-primary btn-sm">Nová aplikace</a></div></div>
+    <table class="table list">
+      <thead><tr><th>Název</th><th>Stav</th><th>Kredit</th></tr></thead>
+      <tbody>
+        <tr><td><a href="#">moje-app</a></td><td><span class="label label-success">běží</span></td><td class="credit"><span>120 Kč</span></td></tr>
+        <tr class="red"><td>stará-app</td><td><span class="label label-danger">zastaveno</span></td><td class="credits-sub">-20 Kč</td></tr>
+        <tr><td>test-app <span class="badge">2</span></td><td><span class="label label-default">neznámý</span></td><td>0 Kč</td></tr>
+      </tbody>
+    </table>
+    <p>
+      <a class="btn btn-primary">Primary</a> <a class="btn btn-default">Default</a> <a class="btn btn-gray">Gray</a>
+      <a class="btn btn-lightgray">Lightgray</a> <a class="btn btn-cancel">Cancel</a> <a class="btn btn-danger">Danger</a>
+      <a class="btn btn-warning">Warning</a> <a class="btn btn-info">Info</a> <a class="btn google-zoho-button">Zoho</a>
+    </p>
+    <div class="alert alert-success">Úspěch – <a class="alert-link" href="#">odkaz</a></div>
+    <div class="alert alert-info">Info zpráva</div>
+    <div class="alert alert-warning">Varování</div>
+    <div class="alert alert-danger">Chyba</div>
+    <div class="panel panel-default email-domain-resource-panel">
+      <div class="panel-heading"><h4>Doména example.cz</h4><a class="btn btn-default btn-sm">Upravit</a></div>
+      <div class="panel-body">
+        <table class="table table-2"><tbody>
+          <tr><th>Schránky</th><td class="mailbox-usage-value">3 / 10</td></tr>
+          <tr><th>DNS</th><td><code>v=spf1 include:rosti.cz ~all</code></td></tr>
+        </tbody></table>
+        <p class="tip">Tip: nastavte DKIM.</p>
+        <p class="text-muted">Muted text</p>
+      </div>
+    </div>
+    <form class="form-horizontal">
+      <div class="form-group"><label class="col-sm-3 control-label">Jméno <sup class="req">*</sup></label><div class="col-sm-9"><input class="form-control" value="Dan" placeholder="Jméno"></div></div>
+      <div class="form-group has-error"><label class="col-sm-3 control-label">E-mail</label><div class="col-sm-9"><input class="form-control" placeholder="placeholder"><span class="help-block">Neplatný e-mail</span></div></div>
+      <div class="form-group"><label class="col-sm-3 control-label">Plán</label><div class="col-sm-9"><div class="input-group"><span class="input-group-addon">@</span><select class="form-control"><option>Basic</option></select></div></div></div>
+      <div class="form-group"><label class="col-sm-3 control-label">Popis</label><div class="col-sm-9"><textarea class="form-control" disabled>disabled</textarea></div></div>
+    </form>
+    <ul class="nav nav-tabs"><li class="active"><a href="#">Přehled</a></li><li><a href="#">Logy</a></li><li><a href="#">Nastavení</a></li></ul>
+    <div class="well">Well content</div>
+    <ul class="pagination" style="display:inline-block"><li class="disabled"><a>«</a></li><li class="active"><a>1</a></li><li><a>2</a></li><li><a>»</a></li></ul>
+    <div class="dropdown open" style="height:120px;position:relative"><ul class="dropdown-menu"><li><a href="#">Firma A</a></li><li class="active"><a href="#">Firma B</a></li><li class="divider"></li><li><a href="#">Odhlásit</a></li></ul></div>
+    <div class="stack-profile-row">
+      <div class="stack-card-wrap"><div class="stack-card"><div class="stack-title">Small</div><div class="stack-price">100 Kč / měsíc</div><div class="stack-resources">1 CPU, 1 GB</div></div></div>
+      <div class="stack-card-wrap"><div class="stack-card stack-card-selected"><div class="stack-title">Medium</div><div class="stack-price">200 Kč / měsíc</div><div class="stack-resources">2 CPU, 2 GB</div></div></div>
+    </div>
+    <div class="danger-section-header padded">Nebezpečná zóna</div>
+    <div class="danger-section-content padded">Smazání aplikace je nevratné.</div>
+    <div class="domain-token-input domain-token-enhanced top-16">
+      <div class="domain-token-control"><div class="domain-token-list">
+        <span class="domain-token domain-token-hosted"><span class="domain-token-text">example.cz</span><button class="domain-token-remove">×</button></span>
+        <span class="domain-token domain-token-test"><span class="domain-token-text">app.rostiapp.cz</span></span>
+        <span class="domain-token domain-token-external"><span class="domain-token-text">external.com</span></span>
+      </div><input class="domain-token-entry" placeholder="Přidat doménu"></div>
+      <div class="domain-token-menu"><button class="domain-token-suggestion active"><strong>example.cz</strong> <span class="domain-token-suggestion-description">hostovaná</span></button><button class="domain-token-suggestion" disabled>blocked.cz</button></div>
+    </div>
+    <div class="dashboard-box top-16"><span class="dashboard-credit">1 234 Kč</span> <span class="dashboard-date">8. 10. 2026</span></div>
+    <div class="status top-16">Probíhá údržba</div>
+    <div class="onoffswitch top-16"><input type="checkbox" class="onoffswitch-checkbox" id="sw" checked><label class="onoffswitch-label" for="sw"><span class="onoffswitch-inner"></span><span class="onoffswitch-switch"></span></label></div>
+
+    <h3 id="more">Více komponent</h3>
+    <p>
+      <span class="label label-default">default</span> <span class="label label-primary">primary</span> <span class="label label-success">success</span>
+      <span class="label label-info">info</span> <span class="label label-warning">warning</span> <span class="label label-danger">danger</span>
+      <a href="#" class="label label-warning">link warning</a> <span class="badge">7</span>
+    </p>
+    <p>
+      <a class="btn btn-primary active">Primary.active</a> <a class="btn btn-warning active">Warning.active</a> <a class="btn btn-danger disabled">Danger.disabled</a>
+      <a class="btn btn-success">Success <span class="badge">4</span></a> <a class="btn btn-warning">Warning <span class="badge">4</span></a> <a class="btn btn-link">Link</a>
+      <button class="btn btn-default btn-xs">xs</button> <button class="btn btn-info btn-lg">Info lg</button>
+    </p>
+    <p class="text-primary">text-primary</p><p class="text-success">text-success</p><p class="text-info">text-info</p>
+    <p class="text-warning">text-warning</p><p class="text-danger">text-danger</p><p class="text-muted">text-muted</p>
+    <p class="bg-primary">bg-primary</p><p class="bg-success">bg-success</p><p class="bg-info">bg-info</p><p class="bg-warning">bg-warning</p><p class="bg-danger">bg-danger</p>
+    <p><a class="link" href="#">a.link</a> · <span class="help-text-icon">?</span> · <span class="payment-warning">payment warning</span> · <span class="dashboard-credit-sub">-5 Kč</span></p>
+    <p class="tip tip-important">Důležitý tip</p>
+    <div class="alert alert-warning">Varování s <a class="alert-link" href="#">odkazem</a></div>
+    <div class="alert alert-danger">Chyba s <a class="alert-link" href="#">odkazem</a></div>
+    <div class="alert alert-info">Info s <a class="alert-link" href="#">odkazem</a></div>
+    <div class="panel panel-primary"><div class="panel-heading">panel-primary</div><div class="panel-body">body</div></div>
+    <div class="panel panel-success"><div class="panel-heading">panel-success</div><div class="panel-body">body</div></div>
+    <div class="panel panel-warning"><div class="panel-heading">panel-warning</div><div class="panel-body">body</div></div>
+    <div class="panel panel-danger"><div class="panel-heading">panel-danger</div><div class="panel-body">body</div></div>
+    <ul class="list-group"><li class="list-group-item active">active item</li><li class="list-group-item">item</li><li class="list-group-item list-group-item-success">success</li><li class="list-group-item list-group-item-warning">warning</li><li class="list-group-item disabled">disabled</li></ul>
+    <ul class="nav nav-pills"><li class="active"><a href="#">Pill active</a></li><li><a href="#">Pill</a></li></ul>
+    <table class="table table-striped table-hover"><tbody>
+      <tr class="success"><td>success row</td></tr><tr class="warning"><td>warning row</td></tr><tr class="danger"><td>danger row</td></tr><tr class="info"><td>info row</td></tr><tr><td>plain row</td></tr>
+    </tbody></table>
+    <div class="progress"><div class="progress-bar progress-bar-success" style="width:60%">60%</div></div>
+    <div class="progress"><div class="progress-bar progress-bar-warning" style="width:40%">40%</div></div>
+    <ol class="breadcrumb"><li><a href="#">Domů</a></li><li class="active">Aplikace</li></ol>
+    <div class="form-group has-success"><label class="control-label">OK pole</label><input class="form-control" value="ok"></div>
+    <div class="form-group has-warning"><label class="control-label">Warn pole</label><input class="form-control" value="warn"><span class="help-block">help</span></div>
+    <div class="tooltip top in" style="position:relative;display:inline-block"><div class="tooltip-inner">Tooltip</div></div>
+    <div class="popover top in" style="position:relative;display:block;max-width:300px"><h3 class="popover-title">Popover</h3><div class="popover-content">Obsah popoveru</div></div>
+    <p><kbd>Ctrl</kbd> <code>code</code></p>
+    <pre>pre block</pre>
+    <blockquote>Citace <small>autor</small></blockquote>
+    <h1>H1 <small>small</small></h1>
+    <p class="build">build 1.2.3</p>
+  </div>
+</div>
+</div>
+</body>
+</html>
